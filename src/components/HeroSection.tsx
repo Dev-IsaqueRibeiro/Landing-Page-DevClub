@@ -53,22 +53,21 @@ const HeroSection = () => {
                 Saiba Mais
               </a>
             </div>
-
-            {/* Salary proof card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="mt-10 glass-card glow-primary p-5 max-w-sm"
-            >
-              <p className="text-sm text-muted-foreground mb-1">
-                Salário médio após transição
-              </p>
-              <p className="text-3xl font-extrabold text-primary">R$ 5.500+</p>
-              <p className="text-sm text-muted-foreground mt-1">
-                para desenvolvedores juniores
-              </p>
-            </motion.div>
+          </motion.div>
+          {/* Salary proof card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            className="mt-10 glass-card glow-primary p-5 max-w-sm"
+          >
+            <p className="text-sm text-muted-foreground mb-1">
+              Salário médio após transição
+            </p>
+            <p className="text-3xl font-extrabold text-primary">R$ 5.500+</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              para desenvolvedores juniores
+            </p>
           </motion.div>
 
           {/* Right side - Platform Preview */}
