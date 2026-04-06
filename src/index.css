@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 17%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 107 100% 40%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 271 58% 44%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 199 89% 60%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --urgent: 353 86% 62%;
+    --urgent-foreground: 210 40% 98%;
+
+    --border: 217 33% 22%;
+    --input: 217 33% 22%;
+    --ring: 142 69% 58%;
+
+    --radius: 0.75rem;
+
+    --gradient-glow: 0 0 60px hsl(142 69% 58% / 0.15);
+    --gradient-blue-glow: 0 0 60px hsla(263, 78%, 42%, 0.15);
+
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 142 69% 58%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 22%;
+    --sidebar-ring: 142 69% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-border/50 rounded-xl;
+  }
+
+  .glow-primary {
+    box-shadow:
+      0 0 30px hsl(142 69% 58% / 0.2),
+      0 0 60px hsl(142 69% 58% / 0.1);
+  }
+
+  .glow-blue {
+    box-shadow:
+      0 0 30px hsl(199 89% 60% / 0.2),
+      0 0 60px hsl(199 89% 60% / 0.1);
+  }
+
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .text-devclub-green {
+    color: #2bcc00;
+  }
+
+  .text-devclub-purple {
+    color: #722eaf;
+  }
+
+  .btn-glow:hover {
+    box-shadow:
+      0 0 20px hsl(142 69% 58% / 0.4),
+      0 0 40px hsl(142 69% 58% / 0.2);
+  }
+
+  @layer utilities {
+    @keyframes wave-and-spin {
+      0% {
+        transform: translateY(0) rotateY(0deg);
+        fill: #2bcc00; /* Inicia Verde */
+        color: #2bcc00;
+      }
+      25% {
+        transform: translateY(-12px) rotateY(180deg);
+        fill: #722eaf; /* No topo e meio giro fica Roxo */
+        color: #722eaf;
+      }
+      50% {
+        transform: translateY(0) rotateY(360deg);
+        fill: #2bcc00; /* Ao descer e completar o giro, volta para o Verde */
+        color: #2bcc00;
+      }
+      100% {
+        transform: translateY(0) rotateY(360deg);
+        fill: #2bcc00; /* Mantém verde enquanto espera o resto da fila */
+        color: #2bcc00;
+      }
+    }
+
+    .star-3d-glow {
+      fill: #2bcc00;
+      color: #2bcc00;
+      /* Ajustei o shadow para ser neutro ou acompanhar a intensidade */
+      filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+      backface-visibility: visible;
+      display: inline-block;
+      transition:
+        fill 0.3s,
+        color 0.3s; /* Suaviza a troca de cor */
+    }
+
+    /* Aplica a animação no hover do card */
+    .glass-card:hover .star-3d-glow {
+      animation: wave-and-spin 2s infinite ease-in-out;
+    }
+
+    /* A "OLA" REAL com os delays que já estão funcionando */
+    .glass-card:hover .star-3d-glow:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .glass-card:hover .star-3d-glow:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    .glass-card:hover .star-3d-glow:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+    .glass-card:hover .star-3d-glow:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+    .glass-card:hover .star-3d-glow:nth-child(5) {
+      animation-delay: 0.8s;
+    }
+  }
+}
