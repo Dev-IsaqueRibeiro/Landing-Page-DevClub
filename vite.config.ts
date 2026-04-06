@@ -3,16 +3,11 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  // Use './' para garantir que os assets funcionem em qualquer subpasta (Firebase ou GH Pages)
-  base: "./",
   plugins: [react()],
+  base: "./", // Essencial para GitHub Pages e Firebase
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"), // Para o Shadcn/UI funcionar
     },
-  },
-  // Opcional: Garante que o build não pare por avisos de CSS do Tailwind
-  build: {
-    chunkSizeWarningLimit: 1600,
   },
 });
