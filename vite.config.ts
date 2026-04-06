@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Se for produção (GitHub Pages), usa o nome do repo. Se não, usa a raiz.
-  base: mode === "production" ? "/landing-page-dev-club/" : "/",
+  base: mode === "production" ? "/Landing-Page-DevClub/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
