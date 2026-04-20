@@ -3,24 +3,502 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevClub — Do Zero ao Profissional de Programação</title>
+    <!-- SEO -->
     <meta
       name="description"
-      content="Transforme sua carreira com a DevClub. Aprenda programação do zero, com mentoria, comunidade e foco em empregabilidade. +750 mil vagas abertas em tech."
+      content="Aprenda programação do zero e conquiste sua vaga como desenvolvedor com a DevClub."
     />
-    <meta
-      property="og:title"
-      content="DevClub — Do Zero ao Profissional de Programação"
+
+    <!-- FONTE - GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
     />
-    <meta
-      property="og:description"
-      content="Método comprovado para aprender programação e conquistar oportunidades reais no mercado de tecnologia."
-    />
-    <meta property="og:type" content="website" />
-    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <title>DevClub | Aprenda Programação do Zero</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <nav class="navbar transparent" id="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <span class="dev">&lt; Dev</span>
+          <span class="club">Club &gt;</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#por-que" class="nav-link">Por que DevClub</a>
+          <a href="#mercado" class="nav-link">Mercado</a>
+          <a href="#depoimentos" class="nav-link">Depoimentos</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </div>
+
+        <a
+          href="https://go.hotmart.com/T105166099U"
+          target="_blank"
+          class="btn-primary"
+        >
+          Começar Agora
+        </a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <!-- Background glow -->
+      <div class="bg-glow glow-green"></div>
+      <div class="bg-glow glow-purple"></div>
+
+      <div class="container">
+        <div class="grid">
+          <!-- LEFT -->
+          <div class="left animate animate-left">
+            <div class="badge">
+              <span class="icon">⚡</span>
+              <span class="numVagas">+750 mil</span> vagas abertas em tech
+            </div>
+
+            <h1>
+              Sua Porta de Entrada e
+              <span class="gradient">Ascensão</span> no Mundo da
+              <span class="gradient">Programação</span>
+            </h1>
+
+            <p>
+              Do zero ao profissional de tecnologia — com método comprovado para
+              aprender, praticar e conquistar oportunidades reais com altos
+              salários.
+            </p>
+
+            <div class="buttons">
+              <a
+                href="https://go.hotmart.com/T105166099U"
+                target="_blank"
+                class="btn-primary"
+              >
+                Quero Começar Agora
+              </a>
+
+              <a href="#por-que" class="btn-secondary"> Saiba Mais </a>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="right">
+            <!-- SALARY CARD -->
+            <div class="salary-card animate animate-bottom delay-2">
+              <p>Salário médio após transição</p>
+              <h2>R$ 5.500+</h2>
+              <p>para desenvolvedores juniores</p>
+            </div>
+
+            <div class="image-card animate animate-right delay-3">
+              <img
+                src="IMAGES/comunidade-devclub.png"
+                alt="Plataforma DevClub"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="por-que">
+      <div class="container">
+        <div class="why-header">
+          <h2>
+            Por que a DevClub é
+            <span class="gradient">diferente?</span>
+          </h2>
+          <p>
+            Se você quer começar do absoluto básico ou dar o salto na carreira,
+            aqui é o lugar certo.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card animate animate-bottom delay-1">
+            <div class="icon">📘</div>
+            <h3>Aprendizado Prático</h3>
+            <p>
+              Conteúdos atualizados que o mercado realmente exige. Projetos
+              reais desde o primeiro dia.
+            </p>
+          </div>
+
+          <div class="why-card animate animate-left delay-3">
+            <div class="icon">👥</div>
+            <h3>Comunidade Vibrante</h3>
+            <p>
+              Milhares de alunos que apoiam seu crescimento e trocam
+              experiências reais diariamente.
+            </p>
+          </div>
+
+          <div class="why-card why-card animate animate-right delay-2">
+            <div class="icon">🧭</div>
+            <h3>Mentoria Especializada</h3>
+            <p>
+              Mentores experientes guiam você na jornada, evitando erros comuns
+              e acelerando resultados.
+            </p>
+          </div>
+
+          <div class="why-card animate animate-bottom delay-1">
+            <div class="icon">🎯</div>
+            <h3>Foco em Empregabilidade</h3>
+            <p>
+              Treinamentos em habilidades técnicas e comportamentais valorizadas
+              pelas maiores empresas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="market" id="mercado">
+      <div class="market-bg"></div>
+
+      <div class="container market-container">
+        <div class="market-header">
+          <span class="market-badge">⚡ Dados do Mercado</span>
+
+          <h2>
+            O mercado de tech
+            <span class="gradient">não espera</span>
+          </h2>
+
+          <p>
+            Enquanto milhares de vagas ficam sem preenchimento, profissionais
+            qualificados conquistam salários acima da média e liberdade
+            geográfica total.
+          </p>
+        </div>
+
+        <div class="market-grid">
+          <div
+            class="stat-card"
+            data-value="750000"
+            data-suffix="+"
+            data-label="Vagas abertas em TI no Brasil"
+          >
+            <div class="icon">💼</div>
+            <h3 class="counter vagas">0</h3>
+            <p>Vagas abertas em TI no Brasil</p>
+          </div>
+
+          <div
+            class="stat-card"
+            data-value="5500"
+            data-prefix="R$"
+            data-suffix="+"
+            data-label="Salário médio dev junior"
+          >
+            <div class="icon">💰</div>
+            <h3 class="counter salarios">0</h3>
+            <p>Salário médio dev junior</p>
+          </div>
+
+          <div
+            class="stat-card"
+            data-value="30"
+            data-suffix="%"
+            data-label="Crescimento anual do setor"
+          >
+            <div class="icon">📈</div>
+            <h3 class="counter crescimento">0</h3>
+            <p>Crescimento anual do setor</p>
+          </div>
+
+          <div
+            class="stat-card"
+            data-value="85"
+            data-suffix="%"
+            data-label="Home office"
+          >
+            <div class="icon">🏠</div>
+            <h3 class="counter homeOffice">0</h3>
+            <p>Das vagas aceitam home office</p>
+          </div>
+
+          <div
+            class="stat-card"
+            data-value="3"
+            data-suffix="x"
+            data-label="Exterior"
+          >
+            <div class="icon">🌍</div>
+            <h3 class="counter exterior">0</h3>
+            <p>Salário maior trabalhando p/ exterior</p>
+          </div>
+
+          <div
+            class="stat-card"
+            data-value="6"
+            data-suffix=" meses"
+            data-label="Tempo até vaga"
+          >
+            <div class="icon">⏱️</div>
+            <h3 class="counter tempoMedio">0</h3>
+            <p>Tempo médio até primeira vaga</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="depoimentos">
+      <div class="container">
+        <div class="testimonials-header">
+          <h2>
+            Quem passou pela DevClub,
+            <span class="gradient">transformou</span>
+          </h2>
+          <p>Histórias reais de pessoas que mudaram de vida com programação.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- CARD -->
+          <div class="testimonial-card animate animate-right">
+            <p class="quote">❝</p>
+            <p class="text">
+              Eu não tinha NENHUMA experiência com programação. A DevClub me deu
+              o caminho completo: do HTML básico até conseguir minha primeira
+              vaga remota ganhando R$ 4.800,00.
+            </p>
+
+            <div class="stars">
+              <span class="star1">★</span>
+              <span class="star2">★</span>
+              <span class="star3">★</span>
+              <span class="star4">★</span>
+              <span class="star5">★</span>
+            </div>
+
+            <p class="name">Lucas Oliveira</p>
+            <p class="role">Dev Frontend — Contratado em 5 meses</p>
+          </div>
+
+          <div class="testimonial-card animate animate-top">
+            <p class="quote">❝</p>
+            <p class="text">
+              Largei meu emprego de R$ 2.500,00 e em 7 meses já estava
+              trabalhando como dev júnior ganhando R$ 6.000,00. A mentoria faz
+              toda a diferença!
+            </p>
+
+            <div class="stars">
+              <span class="star1">★</span>
+              <span class="star2">★</span>
+              <span class="star3">★</span>
+              <span class="star4">★</span>
+              <span class="star5">★</span>
+            </div>
+
+            <p class="name">Ana Carolina Silva</p>
+            <p class="role">Transição de carreira — Ex-administradora</p>
+          </div>
+
+          <div class="testimonial-card animate animate-left">
+            <p class="quote">❝</p>
+            <p class="text">
+              Graças à DevClub, hoje trabalho remotamente para uma empresa
+              americana. Meu salário triplicou. O investimento se pagou no
+              primeiro mês.
+            </p>
+
+            <div class="stars">
+              <span class="star1">★</span>
+              <span class="star2">★</span>
+              <span class="star3">★</span>
+              <span class="star4">★</span>
+              <span class="star5">★</span>
+            </div>
+
+            <p class="name">Pedro Henrique Santos</p>
+            <p class="role">
+              Fullstack Developer — Trabalha p/ empresa dos EUA
+            </p>
+          </div>
+
+          <div class="testimonial-card animate animate-left">
+            <p class="quote">❝</p>
+            <p class="text">
+              Tinha medo de não conseguir por não ter faculdade na área. A
+              comunidade da DevClub me mostrou que o que importa é o portfólio e
+              a prática.
+            </p>
+
+            <div class="stars">
+              <span class="star1">★</span>
+              <span class="star2">★</span>
+              <span class="star3">★</span>
+              <span class="star4">★</span>
+              <span class="star5">★</span>
+            </div>
+
+            <p class="name">Mariana Costa</p>
+            <p class="role">Dev Júnior — Primeira vaga em 4 meses</p>
+          </div>
+
+          <div class="testimonial-card animate animate-bottom">
+            <p class="quote">❝</p>
+            <p class="text">
+              Estudava sozinho há 2 anos sem resultado. Em 6 meses na DevClub,
+              consegui estruturar meu aprendizado e fui contratado. Mudou minha
+              vida.
+            </p>
+
+            <div class="stars">
+              <span class="star1">★</span>
+              <span class="star2">★</span>
+              <span class="star3">★</span>
+              <span class="star4">★</span>
+              <span class="star5">★</span>
+            </div>
+
+            <p class="name">Rafael Mendes</p>
+            <p class="role">Backend Developer — Home Office</p>
+          </div>
+
+          <div class="testimonial-card animate animate-right">
+            <p class="quote">❝</p>
+            <p class="text">
+              O suporte dos mentores é incrível. Sempre que eu travava, tinha
+              alguém pra me ajudar. Hoje ganho R$ 7.200,00 trabalhando de casa.
+            </p>
+
+            <div class="stars">
+              <span class="star1">★</span>
+              <span class="star2">★</span>
+              <span class="star3">★</span>
+              <span class="star4">★</span>
+              <span class="star5">★</span>
+            </div>
+
+            <p class="name">Juliana Ferreira</p>
+            <p class="role">Mobile Developer — Startup</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="oferta">
+      <div class="cta-bg"></div>
+
+      <div class="container cta-container">
+        <div class="cta-content">
+          <div class="cta-badge">🔥 PREÇO PROMOCIONAL 🔥</div>
+
+          <h2>
+            Não deixe para depois o futuro que você pode
+            <span class="gradient">começar agora</span>
+          </h2>
+
+          <p class="cta-badgeText">
+            O mercado de tecnologia cresce a cada dia. Cada semana que passa é
+            uma oportunidade perdida. Garanta seu acesso e transforme seu
+            potencial em resultados concretos.
+          </p>
+
+          <a
+            href="https://go.hotmart.com/T105166099U"
+            target="_blank"
+            class="btn-primary btn3"
+          >
+            Transformar Minha Carreira
+          </a>
+
+          <div class="cta-benefits">
+            <div class="benefit">🛡️ <span>Garantia de 7 dias</span></div>
+            <div class="benefit">⏱️ <span>Acesso imediato</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container faq-container">
+        <div class="faq-header">
+          <h2>Perguntas <span class="gradient">Frequentes</span></h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Preciso ter experiência para começar?</span>
+            </button>
+            <div class="faq-answer">
+              Não! A DevClub foi feita para levar você do zero absoluto ao nível
+              profissional. Nosso método é passo a passo, com aulas práticas
+              desde o primeiro dia. Não importa se você nunca escreveu uma linha
+              de código.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Quanto tempo preciso dedicar por dia?</span>
+            </button>
+            <div class="faq-answer">
+              Recomendamos pelo menos 1 a 2 horas por dia. Nossos alunos que
+              mantêm essa consistência conseguem resultados em 4 a 7 meses. Mas
+              o conteúdo é gravado, você estuda no seu ritmo.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>O curso oferece certificado?</span>
+            </button>
+            <div class="faq-answer">
+              Sim! Ao concluir cada módulo, você recebe um certificado de
+              conclusão. Mas o mais importante: você terá um portfólio de
+              projetos reais que impressionam recrutadores muito mais que
+              qualquer certificado.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como funciona o suporte e a mentoria?</span>
+            </button>
+            <div class="faq-answer">
+              Você tem acesso a mentores experientes que tiram dúvidas em tempo
+              real, além de uma comunidade ativa com milhares de alunos. Ninguém
+              fica preso sozinho em um problema.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Posso migrar de carreira mesmo sem formação na área?</span>
+            </button>
+            <div class="faq-answer">
+              Com certeza! Grande parte dos nossos alunos de sucesso vieram de
+              outras áreas: administração, vendas, logística, e mais. O mercado
+              de tech valoriza habilidade prática acima de diplomas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="logo">
+          <span class="dev">&lt; Dev</span>
+          <span class="club">Club &gt;</span>
+        </div>
+
+        <p class="copyright">
+          © <span id="year"></span> DevClub. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
